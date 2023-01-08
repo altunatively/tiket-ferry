@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DANZJOKI - Joki dan Topup Diamond Mobile Legends</title>
+        <link rel="icon" type="image/png" href="assets/logo.png"/>
+        
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+        <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+            }
+        }
+        </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container-fluid mx-md-5 px-md-5">
+                    <a class="navbar-brand " href="index.html"><img src="assets/logo.png" alt="LOGO" height="40px" class="bi me-2">DANZJOKI</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home fa-lg text-muted"></i> Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#"><i class="fa fa-file text-muted"></i> Cek Transaksi</a>
+                            </li>			
+                        </ul>		  
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container mb-5 pb-5">
+                <div class="row mt-5 mb-5 pb-5">
+                    <div class="col-lg-6 mx-auto">
+                        <div class="card bg-dark shadow">
+                            <div class="card-header">
+                                <h5 class = "primary-danz">Cek invoice</h5>
+                            </div>
+                            <div class="card-body">
+                                Invoice Number:
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-receipt"></i></span>
+                                    <input type="text" name="invnum" id="invnum" class="form-control" placeholder="TP9534xxxxxx">
+                                </div>
+                                <button class="btn btn-primary-danz mt-3 float-end" onclick="checkk();">Check</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main><!-- /.container -->
+        <!-- FOOTER -->
+        <footer class="footer pt-1 mt-auto border-dark shadow-lg fixed-bottom">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/logo.png" alt="LOGO" style="float:left;margin-left:2%;height:40px;width:40px; " class="bi me-2">
+                        <h5 class="text-uppercase mt-2" style="margin:0">DANZJOKI</h5>
+                        <div class="mt-2">
+                            <p>Danzjoki adalah Toko Specialist Game Mobile Legends No.1 Murah , Aman &amp; Terpercaya</p>
+                        </div>
+                        <div class="mt-2">
+                            <h5 class="mt-3">Butuh Bantuan?</h5>
+                            <a class = "btn btn-lg btn-outline-primary-danz">Hubungi Kami</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h5 class="mt-2">Menu</h5>
+                        <div class="mt-2">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a href="/" class="nav-link text-white ">
+                                        <i class="fa fa-angle-right primary-danz"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="https://takapedia.com/status" class="nav-link text-white ">
+                                        <i class="fa fa-angle-right primary-danz"></i>
+                                        Cek Transaksi
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h5 class="mt-2">Social Media</h5>
+                        <div class="mt-2">
+                            <a href="https://www.facebook.com/cubitusri" label="Codashop Official Facebook" target="_blank"><img src="https://cdn1.codashop.com/S/content/social-media-logo/36/socmed-facebook-H36.png" alt="" height="auto" width="40"></a>
+                            <a href="https://www.youtube.com/c/CodashopOfficial" label="Youtube" target="_blank"><img src="https://cdn1.codashop.com/S/content/social-media-logo/36/socmed-youtube-H36.png" alt="" height="auto" width="40"></a>
+                            <a href="https://www.instagram.com/codashop.idofficial/?hl=id" label="Codashop Official Instagram" target="_blank"><img src="https://cdn1.codashop.com/S/content/social-media-logo/36/socmed-instagram-H36.png" alt="" height="auto" width="40"></a>
+                            <a href="https://www.tiktok.com/@codashop_global?lang=en" label="Tiktok" target="_blank"><img src="https://cdn1.codashop.com/S/content/social-media-logo/36/socmed-tiktok-H36.png" alt="" height="auto" width="40"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid mt-2">
+                <div class="row" id="footer-credit">
+                    <div class="col">
+                        <div class="container mt-2 mb-2 text-center">
+                            <small>
+                                ©Hak Cipta DANZJOKI
+                                <span class = "mx-2">
+                                    <a href="https://takapedia.com/terms-and-conditions" class="text-white">Terms and conditions</a>
+                                </span>
+                                    <a href="https://takapedia.com/privacy-policy" class="text-white">Privacy Policy</a>
+                                </span>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+    </body>
+</html>

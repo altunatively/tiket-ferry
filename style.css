@@ -1,0 +1,257 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+
+body {
+  padding-top: 3rem;
+  background-color: white;
+  /* opacity: 0.8;
+  background-size: 10px 10px;
+  background-image: repeating-linear-gradient(45deg, #000020 0, #000020 1px, #000042 0, #000042 50%); */
+  font-family: 'Poppins', sans-serif;
+  color:#36445a;
+}
+
+nav {
+  background-color:white;
+  color:#36445a;
+}
+
+footer {
+  display:block;
+  color:#36445a;
+  font-weight:500;
+  background-color: white;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+/* Makes images fully responsive */
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-inner {
+  border-radius: 15px;
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+
+/* ITEM CONTENT
+-------------------------------------------------- */
+
+.img-item {
+  width:80%;
+  border-radius:0.5rem !important;
+  left:50% !important;
+  top:0 !important;
+  position:absolute !important;
+}
+
+.danz-card {
+  background-color:#32103a;
+}
+
+.danz-card-title{
+  color:white;
+}
+
+.btn-outline-primary-danz {
+  border-color:#ffed75;
+  color:#ffed75;
+}
+.btn-primary-danz {
+  color:black;
+  background-color:#ffed75;
+}
+
+.btn-primary-danz:hover {
+  background-color:#ffed75;
+}
+
+a.btn-primary-danz:hover{
+  background-color:#ffed75;
+  color:black;
+}
+
+.primary-danz {
+  color:#ffed75;
+}
+
+.secondary-danz {
+  color:#001B35;
+}
+
+/* PRODUCT CONTENT
+-------------------------------------------------- */
+
+
+
+
+.list-group-item {
+  user-select: none;
+}
+
+.list-group input[type="radio"] {
+  display: none;
+}
+
+.list-group input[type="radio"]+.list-group-item:hover {
+  cursor: pointer;
+  background-color: #307fe2;
+  color: black;
+  border-color: #001B35;
+  border-radius: 3px;
+}
+
+.list-group input[type="radio"]:checked+.list-group-item {
+  background-color: #307fe2;
+  color: black;
+}
+
+.list-group input[type="radio"]+.list-group-payment {
+  color: #36445a;
+  filter:grayscale(1);
+}
+
+.list-group input[type="radio"]:hover+.list-group-payment {
+  cursor:pointer;
+}
+
+.list-group input[type="radio"]:checked+.list-group-payment {
+  background-color: #307fe2;
+  color: white;
+  filter:grayscale(0);
+}
+
+.paymentMethod{
+  padding-top:2rem;
+  border-bottom:1px solid gray;
+}
+
+.paymentMethodSeparator{
+  border-bottom:1px solid gray;
+}
+
+.paymentMethodimg{
+  display: inline;
+  max-width: 40px;
+  width:auto;
+  height: auto;
+  margin-right:1rem;
+  background-color:white;
+}
+
+.paymentMethod:hover{
+  cursor:pointer;
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+.footer-header{
+  font-weight:bold;
+}
+
+.footer-list{
+  font-weight:500;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+.section-wrapper{
+  padding-top:1rem;
+  padding-bottom:1rem;
+  background-color:white;
+}
+
+.clearfix{
+  background-color:#f4f4f4;
+  padding-top:0.3rem;
+  padding-bottom:0.3rem;
+}
+
+.clearfix-product{
+  display:block;
+  background-color:white;
+  padding-bottom:0.3rem;
+}
+
+.avatar{
+  max-height: 3rem;
+  max-width: 3rem;
+}
+
+a.item-link{
+  text-decoration:none;
+  color: #36445a;
+}
+
+.nav-link{
+  color: #36445a !important;
+}
