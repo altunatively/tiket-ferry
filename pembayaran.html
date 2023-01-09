@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DFerry - Pesan Tiket Ferry Sekarang</title>
+    <link rel="icon" type="image/png" href="assets/logo.png"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/jquery.seat-charts.css">
+
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body style="background-color:#f4f4f4;">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid mx-md-5 px-md-5">
+            <a class="navbar-brand " href="index.html"><img src="assets/logo.png" alt="LOGO" height="40px" class="bi me-2">DFerry</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="riwayat.html"><i class="fa fa-clock text-muted"></i> Riwayat Pemesanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"><i class="fa fa-user text-muted"></i> Login Pengguna</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <div class = "clearfix"></div>
+        <div class="section-wrapper row d-inline-block m-0 w-100 mt-5 pt-5">
+            <div class = "col-md-12 mx-md-5">
+                <div class = "row pe-0">
+                    <div class = "col-md-6 pe-0">
+                        <h2 class = "fw-bold mb-3">Rincian Pembayaran</h2>
+                    </div>
+                    <div class = "col-md-12 mt-5 mt-md-3 me-5 pe-5">
+                        <ul class="list-group pe-5">
+                            <li class="list-group-item">
+                                Kursi 6A
+                                <div class = "float-end">Rp80.000</div>
+                            </li>
+                            <li class="list-group-item">
+                                Kursi 1D
+                                <div class = "float-end">Rp90.000</div>
+                            </li>
+                            <li class="list-group-item">
+                                Kursi 3B
+                                <div class = "float-end">Rp80.000</div>
+                            </li>
+                            <li class="list-group-item">
+                                Kursi 7C
+                                <div class = "float-end">Rp80.000</div>
+                            </li>
+                            <li class="list-group-item">
+                                <b>
+                                    Total
+                                    <div class = "float-end">Rp80.000</div>
+                                </b>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class = "col-md-12 mt-5 mt-md-3 me-5 pe-5">
+                        <h3 class = "fw-bold mb-0" id = "pembayaran">Pembayaran</h3>
+                        <div class="card-body mt-0">
+                            <div class="area-list-payment-method mt-0">
+                                <div class="paymentMethod col-md-12" data-bs-toggle="collapse" data-bs-target="#va"><h2><i class = "far fa-credit-card"></i> Transfer Bank<span class = "mr-auto me-auto float-end"><i class = "fa fa-chevron-down"></i></span></h2></div>
+                                <div id="va" class="collapse">
+                                    <div class="col-md-12 ms-1">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-bca" value="125" data-type="diamond">
+                                            <label for="method-bca" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/ytBKvaleGy1605201833.png" class = "paymentMethodimg">Bank BCA</h4>
+                                            </label>
+                                        </div>
+                                        <div class="paymentMethodSeparator"></div>
+                                    </div>
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-maybank" value="125" data-type="diamond">
+                                            <label for="method-maybank" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/ZT91lrOEad1582929126.png" class = "paymentMethodimg">Maybank</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-bni" value="125" data-type="diamond">
+                                            <label for="method-bni" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/n22Qsh8jMa1583433577.png" class = "paymentMethodimg">Bank BNI</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-permata" value="125" data-type="diamond">
+                                            <label for="method-permata" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/szezRhAALB1583408731.png" class = "paymentMethodimg">Bank Permata</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-bri" value="125" data-type="diamond">
+                                            <label for="method-bri" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/8WQ3APST5s1579461828.png" class = "paymentMethodimg">Bank BRI</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-mandiri" value="125" data-type="diamond">
+                                            <label for="method-mandiri" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/T9Z012UE331583531536.png" class = "paymentMethodimg">Bank Mandiri</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-bsi" value="125" data-type="diamond">
+                                            <label for="method-bsi" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/tEclz5Assb1643375216.png" class = "paymentMethodimg">Bank Syariah Indonesia</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="paymentMethod col-md-12" data-bs-toggle="collapse" data-bs-target="#cs"><h2><i class="fas fa-store"></i> Minimarket<span class = "mr-auto me-auto float-end"><i class = "fa fa-chevron-down"></i></span></h2></div>
+                                <div id="cs" class="collapse">
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-alfamart" value="125" data-type="diamond">
+                                            <label for="method-alfamart" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/jiGZMKp2RD1583433506.png" class = "paymentMethodimg">Alfamart</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-indomaret" value="125" data-type="diamond">
+                                            <label for="method-indomaret" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/zNzuO5AuLw1583513974.png" class = "paymentMethodimg">Indomaret</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 ms-1 mt-3">
+                                        <div class="list-group">
+                                            <input type="radio" class = "danz-radio" name="paymentRadio" id="method-alfamidi" value="125" data-type="diamond">
+                                            <label for="method-alfamidi" class="list-group-payment">
+                                                <h4><img src = "https://tripay.co.id/images/payment-channel/aQTdaUC2GO1593660384.png" class = "paymentMethodimg">Alfamidi</h4>
+                                            </label>
+                                            <div class="paymentMethodSeparator"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="paymentMethod col-md-12" data-bs-toggle="collapse" data-bs-target="#ew"><h2><i class = "fas fa-wallet"></i> QRIS<span class = "mr-auto me-auto float-end"><i class = "fa fa-chevron-down"></i></span></h2></div>
+                            <div id="ew" class="collapse">
+                                <div class="col-md-12 ms-1 mt-3">
+                                    <div class="list-group">
+                                        <input type="radio" class = "danz-radio" name="paymentRadio" id="method-qris" value="125" data-type="diamond">
+                                        <label for="method-qris" class="list-group-payment">
+                                            <h4><img src = "https://tripay.co.id/images/payment-channel/BpE4BPVyIw1605597490.png" class = "paymentMethodimg">Gopay | Dana | Ovo | Shopeepay | dll</h4>
+                                        </label>
+                                        <div class="paymentMethodSeparator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group pe-5">
+                        <button class = "btn btn-primary col-md-12 btn-block">Proses Pembayaran</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main><!-- /.container -->
+<!-- FOOTER -->
+<footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2023 DFerry Batam, Indonesia</p>
+</footer>
+</main>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="assets/jquery.seat-charts.js"></script>
+
+<script>
+    var firstSeatLabel = 1;
+
+    $(document).ready(function() {
+        var $cart = $('#selected-seats'),
+            $counter = $('#counter'),
+            $total = $('#total'),
+            sc = $('#seat-map').seatCharts({
+                map: [
+                    'ffff_ffff',
+                    'ffff_ffff',
+                    'eeee_eeee',
+                    'eeee_eeee',
+                    'eeee_eeee',
+                    'eeee_eeee',
+                    'eeee_eeee',
+                    'eeee_eeee',
+                    'eeee_eeee',
+                ],
+                seats: {
+                    f: {
+                        price   : 80000,
+                        classes : 'first-class', //your custom CSS class
+                        category: 'First Class'
+                    },
+                    e: {
+                        price   : 90000,
+                        classes : 'economy-class', //your custom CSS class
+                        category: 'Economy Class'
+                    }
+
+                },
+                naming : {
+                    top : false,
+                    getLabel : function (character, row, column) {
+                        return firstSeatLabel++;
+                    },
+                },
+                legend : {
+                    node : $('#legend'),
+                    items : [
+                        [ 'f', 'available',   'First Class' ],
+                        [ 'e', 'available',   'Economy Class'],
+                        [ 'f', 'unavailable', 'Already Booked']
+                    ]
+                },
+                click: function () {
+                    if (this.status() == 'available') {
+                        //let's create a new <li> which we'll add to the cart items
+                        $('<li>'+this.data().category+' Seat # '+this.settings.label+': <b>Rp'+this.data().price+'</b> <a href="#" class="cancel-cart-item">[cancel]</a></li>')
+                            .attr('id', 'cart-item-'+this.settings.id)
+                            .data('seatId', this.settings.id)
+                            .appendTo($cart);
+
+                        /*
+                         * Lets update the counter and total
+                         *
+                         * .find function will not find the current seat, because it will change its stauts only after return
+                         * 'selected'. This is why we have to add 1 to the length and the current seat price to the total.
+                         */
+                        $counter.text(sc.find('selected').length+1);
+                        $total.text(recalculateTotal(sc)+this.data().price);
+
+                        return 'selected';
+                    } else if (this.status() == 'selected') {
+                        //update the counter
+                        $counter.text(sc.find('selected').length-1);
+                        //and total
+                        $total.text(recalculateTotal(sc)-this.data().price);
+
+                        //remove the item from our cart
+                        $('#cart-item-'+this.settings.id).remove();
+
+                        //seat has been vacated
+                        return 'available';
+                    } else if (this.status() == 'unavailable') {
+                        //seat has been already booked
+                        return 'unavailable';
+                    } else {
+                        return this.style();
+                    }
+                }
+            });
+
+        //this will handle "[cancel]" link clicks
+        $('#selected-seats').on('click', '.cancel-cart-item', function () {
+            //let's just trigger Click event on the appropriate seat, so we don't have to repeat the logic here
+            sc.get($(this).parents('li:first').data('seatId')).click();
+        });
+
+        //let's pretend some seats have already been booked
+        sc.get(['1_2', '4_1', '7_1', '7_2']).status('unavailable');
+
+    });
+
+    function recalculateTotal(sc) {
+        var total = 0;
+
+        //basically find every selected seat and sum its price
+        sc.find('selected').each(function () {
+            total += this.data().price;
+        });
+
+        return total;
+    }
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
