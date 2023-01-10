@@ -76,11 +76,18 @@
                         </div>
                     </div>
                     <div class = "col-sm-12 col-md-6 pe-md-5 mt-5 align-bottom mt-auto">
-                        <h3 class = "float-end me-5 mt-2">Rp80.000</h3>
-                        <div class = "clearfix-product"></div><br><br>
-                        <h6 class = "float-end me-5 text-muted">(Harga sudah termasuk <i>Seaport Tax</i>)</h6>
+
+                        <h3 class = "float-end me-5 mt-2 d-none d-md-block">Rp80.000</h3>
+                        <h3 class = "mt-2 d-sm-block fw-bold d-md-none">Rp80.000</h3>
+
+                        <div class = "clearfix-product"></div><br class = "d-none d-md-block"><br  class = "d-none d-md-block">
+                        <h6 class = "float-end me-5 text-muted d-none d-md-block">(Harga sudah termasuk <i>Seaport Tax</i>)</h6>
+                        <h6 class = "text-muted d-sm-block d-md-none">(Harga sudah termasuk <i>Seaport Tax</i>)</h6>
+
                         <div class = "clearfix-product"></div><br>
-                        <a href = "seatplan.html" class = "btn btn-primary rounded-pill px-5 float-right float-end me-5">Pesan Tiket</a>
+
+                        <a href = "seatplan.html" class = "btn btn-primary rounded-pill px-5 float-right float-end me-5 d-none d-md-block">Pesan Tiket</a>
+                        <a href = "seatplan.html" class = "btn btn-primary rounded-pill px-5 mx-5 btn-lg btn-block float-right d-sm-block d-md-none">Pesan Tiket</a>
                     </div>
                     <div class = "col-md-12 mt-5 mt-md-3">
                         <nav class = "me-5">
@@ -91,11 +98,12 @@
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane show active fade me-5 text-center" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                <img class = "img-responsive h-25 w-25 text-center mx-auto" src="assets/seatplan.jpg">
+                                <img class = "img-responsive w-25 h-25  d-none d-md-block text-center mx-auto" src="assets/seatplan.jpg">
+                                <img class = "img-responsive d-sm-none text-center mx-auto" src="assets/seatplan.jpg">
                             </div>
-                            <div class="tab-pane fade mt-4 mx-4 me-5" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="tab-pane fade mt-4 mx-4 me-md-5" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                                 <h6>Kebijakan Perjalanan</h6>
-                                <ol class = "me-5">
+                                <ol class = "me-md-5">
                                     <li style="text-align: justify;">Anda sudah dapat <strong>Masuk Pelabuhan (Check In) mulai dari 2 (dua) jam sebelum</strong> Jadwal Masuk Pelabuhan yang Anda pilih;</li>
                                     <li style="text-align: justify;">Tiket akan <strong>hangus (expired)</strong> apabila Anda belum Masuk Pelabuhan (Check In) <strong>hingga melewati batas waktu</strong> Jadwal Masuk Pelabuhan yang Anda pilih;</li>
                                     <li style="text-align: justify;"><strong>Nama Penumpang harus sesuai </strong>dengan<strong> Kartu Identitas</strong> (KTP/SIM/Passpor/Dll);</li>
