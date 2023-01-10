@@ -349,3 +349,9 @@ span.seatCharts-legendDescription {
   width: 450px;
 }
 
+@media (max-width:768px){
+  .seatPlan-container{
+    overflow-x:scroll;
+  }
+}
+
