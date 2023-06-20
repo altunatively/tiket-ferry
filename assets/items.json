@@ -1,0 +1,22 @@
+[
+  {
+    "route": "Batam - Tg Pinang",
+    "description": "Tiket Kapal Ferry",
+    "price": 75000
+  },
+  {
+    "route": "Tg Pinang - Batam",
+    "description": "Tiket Kapal Ferry",
+    "price": 75000
+  },
+  {
+    "route": "Batam - Karimun",
+    "description": "Tiket Kapal Ferry",
+    "price": 50000
+  },
+  {
+    "route": "Karimun - Batam",
+    "description": "Tiket Kapal Ferry",
+    "price": 50000
+  }
+]
